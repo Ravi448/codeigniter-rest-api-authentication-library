@@ -16,6 +16,7 @@ Write the code like below:
 
 <code>
     class Api extends AUTH_Controller {
+        
         public function __construct(){
             parent::__construct();
         }
