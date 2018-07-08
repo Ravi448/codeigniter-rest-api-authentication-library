@@ -12,6 +12,8 @@ Download this repository.
 3. Now just create a controller in <code>application/controller</code> that extends <code>AUTH_Controller</code>
 
 Write the code like below:
+<br/>
+
 <code>
     class Api extends AUTH_Controller {
         public function __construct(){
