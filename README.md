@@ -16,7 +16,7 @@ Write the code like below:
 
 <code>
     class Api extends AUTH_Controller {
-        
+
         public function __construct(){
             parent::__construct();
         }
@@ -30,3 +30,10 @@ Write the code like below:
 
 # Example
 Example API is in <code>application/controller/Api.php</code>
+
+
+# info
+Author:  Ravi Kumar <br/>
+Licence: MIT <br/>
+Usability: Public <br/>
+First Commit: 08/Jul/2018 (IST)
