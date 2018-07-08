@@ -13,10 +13,7 @@ Download this repository.
 
 Write the code like below:
 <code>
-    <?php
-        defined('BASEPATH') OR exit('No direct script access allowed');
-
-        class Api extends AUTH_Controller {
+    class Api extends AUTH_Controller {
         public function __construct(){
             parent::__construct();
         }
