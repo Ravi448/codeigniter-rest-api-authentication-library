@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L] 
+# Begin cache control #
+ExpiresActive on
+ExpiresActive off
+<FilesMatch ".*">
+Header unset Cache-Control
+Header unset Expires
+Header unset Last-Modified
+FileETag None
+Header unset Pragma
+Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+# End cache control #
+DirectoryIndex index.php index.html
+
+#ErrorDocument 404 Custom Message : "404 page not found"
+
+Options -Indexes
+</IfModule>
